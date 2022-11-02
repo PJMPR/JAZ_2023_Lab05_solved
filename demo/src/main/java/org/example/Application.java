@@ -23,10 +23,10 @@ public class Application {
          * Nałożymy tzw "fasadę" na api metody.
          * Zacznijmy od wyciągnięcia kilku defnicji metod z klasy Subject
          */
-//        var setSomethingMethod = subjectClass.getDeclaredMethod("setSomething", Object.class);
-//        var emptyMethod = subjectClass.getDeclaredMethod("emptyMethod");
-//        var getterMethod = subjectClass.getDeclaredMethod("getNumber");
-//        var setterMethod = subjectClass.getDeclaredMethod("setNumber");
+        var setSomethingMethod = subjectClass.getDeclaredMethod("setSomething", Object.class);
+        var emptyMethod = subjectClass.getDeclaredMethod("emptyMethod");
+        var getterMethod = subjectClass.getDeclaredMethod("getNumber");
+        var setterMethod = subjectClass.getDeclaredMethod("setNumber", int.class);
 
         /**
          * Utwórz interfejs o nazwie IMethodFacade oraz jego implementację w postaci klasy SimpleMethod
@@ -58,7 +58,7 @@ public class Application {
          * isVoid - sprawdza czy metoda jest typu void
          */
 //        if(!simplePrivateMethod.isVoid()) throw new Exception("metoda setSomething jest typu void");
-//        if(simplePublicMethod.isVoid()) throw new Exception("metoda emptyMethod nie jest typu void");
+        //if(!simplePublicMethod.isVoid()) throw new Exception("metoda emptyMethod nie jest typu void");
 
         /**
          * isSetter - sprawdza czy metoda jest setterem tzn.:
